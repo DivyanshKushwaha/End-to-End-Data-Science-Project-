@@ -74,7 +74,8 @@ class ModelTrainer:
             ) 
 
             predicted = best_model.predict(x_test)
-            return r2_score
+            r2_square = r2_score(y_test,predicted)
+            return r2_square
 
 
 
